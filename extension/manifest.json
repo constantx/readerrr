@@ -1,5 +1,5 @@
 {
-    "name": "greader",
+    "name": "readerrr",
     "version": "0.2.1",
     "manifest_version": 2,
     "description": "better readability for google reader",
@@ -11,12 +11,18 @@
     "content_scripts": [
         {
             "matches": [
-                "http://www.google.com/reader/view/"
+                "http://www.google.com/reader/view/",
+                "https://www.google.com/reader/view/"
             ],
             "css": ["css/main.css"],
             "js": [
+                "js/jquery-1.7.2.min.js",
                 "js/main.js"
             ]
         }
+    ],
+
+    "web_accessible_resources" : [
+        "fonts/fontawesome-webfont.ttf"
     ]
 }
