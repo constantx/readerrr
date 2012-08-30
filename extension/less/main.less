@@ -5,6 +5,7 @@
 @colorMain: #f4524e;
 @colorText: #424242;
 @colorLight: #fffffa;
+@fontAwesomePath: '/fonts';
 
 .tk-heading(){
     font-family: 'Droid Sans', Helvetica, Arial, sans-serif !important;
@@ -20,6 +21,22 @@
     font-weight: normal !important;
 }
 
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('@{fontAwesomePath}/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-font(){
+    font-family: 'FontAwesome';
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+    .unselectable;
+}
+
 .cwrapper(){
     margin-left: auto !important;
     margin-right: auto !important;
@@ -28,6 +45,11 @@
     .tk-meta();
     color: lighten(@colorText,40);
 }
+
+.fontSmooth(@type:antialiased){
+    -webkit-font-smoothing: @type;
+}
+
 /**
  * LAYOUT
  */
@@ -37,18 +59,37 @@
     padding-left: 2em;
     padding-right: 2em;
     background: @colorLight;
+
+    &:before{
+        display: block;
+        position: absolute;
+        content: '\f03b';
+        left: 5px;
+        top: 50%;
+        padding: 0.4em 0 0.3em;
+        font-size: 1.5em;
+        color: @colorMain;
+        .icon-font();
+        .borderRadius(0 3px 3px 0);
+        .fontSmooth(subpixel-antialias);
+        z-index: 11;
+    }
 }
 
 #nav{
     position: relative;
     z-index: 10;
     background-color: @colorLight;
-    padding: 0 1em 2em;
-    margin-right: -236px;
-    .boxSizing(border-box);
+    padding: 0 1em 2em 2em;
+    margin-right: -100%;
+    .transition(all, 0.2s, ease-in-out);
+    border-left: solid 40px transparent;
 
     &:hover{
         z-index: 30;
+        border-left: 0;
+        padding-left: 1em;
+        padding-right: 1em;
         .boxShadow(1px 0px 3px 0px rgba(0,0,0,0.15));
     }
 
@@ -58,31 +99,24 @@
     }
 }
 
-#nav,
-#viewer-header{
-    .transition(all, 0.2s, ease-in-out);
-    opacity: 0.05;
-    &:hover{
-        opacity: 1;
-    }
-}
-
-#viewer-header{
-    opacity: 0.05;
-    background: transparent !important;
-}
 
 #viewer-header-container{
     position: relative;
-    z-index: 10;
     min-width: 46em;
     margin: 0 auto !important;
     background-color: @colorLight !important;
-
-    &:hover{
-        z-index: 30;
-    }
+    z-index: 20;
 }
+
+    #viewer-header{
+        opacity: 0.1;
+
+        &:hover{
+            z-index: 30;
+            opacity: 1;
+
+        }
+    }
 
 #viewer-container{
     position: relative;
@@ -102,9 +136,9 @@
 }
 
 #title-and-status-holder{
-    border-bottom: solid 1px fadeout(@colorText,80);
     margin: 0 !important;
-    padding-left: 1em !important;
+    padding-left: 0 !important;
+
     span{
         .meta();
     }   
