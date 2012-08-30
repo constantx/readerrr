@@ -34,8 +34,8 @@
 
 #chrome{
     margin: 0 auto 0 !important;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     background: @colorLight;
 }
 
@@ -77,6 +77,8 @@
     z-index: 10;
     min-width: 46em;
     margin: 0 auto !important;
+    background-color: @colorLight !important;
+
     &:hover{
         z-index: 30;
     }
@@ -201,15 +203,13 @@
         .card-actions,
         .entry-actions{
             font-size: 13px;
-            
             padding-left: 0 !important;
             padding-right: 0 !important;
             border-left: none !important;
             margin-bottom: 2*16/13em !important;
             text-align: center;
-
             opacity: 0.5;
-            .transition(opacity);
+
             &:hover{
                 opacity: 1;
             }
@@ -275,7 +275,7 @@
         }
 
         &.read{
-            opacity: 0.8;
+            opacity: 0.7;
             .collapsed{
                 border-bottom: 0 !important;
                 
