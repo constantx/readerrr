@@ -1,0 +1,366 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/utilities/general/min";
+@import "http://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif:400,700,400italic,700italic";
+
+$widthMain: 36em;
+$colorMain: #f4524e;
+$colorText: #424242;
+$colorLight: #fffffa;
+
+@mixin font-smoothing($var: antialiased){
+  -webkit-font-smoothing: $var;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('chrome-extension://__MSG_@@extension_id__/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin icon-font{
+  font-family: 'FontAwesome';
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+.cwrapper{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.meta{
+  @extend .tk-meta;
+  color: lighten($colorText,40);
+}
+
+.tk-heading{
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif !important;
+}
+
+.tk-text{
+  font-family: 'Droid Serif', "Times New Roman", Georgia, serif !important;
+  color: $colorText !important;
+}
+
+.tk-meta{
+  font-family: "Panic Sans", "inconsolata",Monaco,'Courier New',monospace !important;
+  font-weight: normal !important;
+}
+
+/**
+ * LAYOUT
+ */
+
+#chrome{
+  margin: 0 auto 0 !important;
+  padding-left: 3em;
+  padding-right: 3em;
+  background: $colorLight;
+
+  &:before{
+    display: block;
+    position: absolute;
+    content: '\f03b';
+    left: 5px;
+    top: 50%;
+    padding: 0.4em 0 0.3em;
+    color: $colorMain;
+    @include icon-font;
+    @include border-radius(0 3px 3px 0);
+    @include font-smoothing(subpixel-antialias);
+    z-index: 11;
+  }
+}
+
+#nav{
+  position: relative;
+  z-index: 10;
+  background-color: $colorLight;
+  padding: 0 1em 2em 2em;
+  margin-right: -100%;
+  @include transition(all, 0.2s, ease-in-out);
+  border-left: solid 50px transparent;
+
+  &:hover{
+    z-index: 30;
+    border-left: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    @include box-shadow(1px 0px 3px 0px rgba(0,0,0,0.15));
+  }
+
+  .section,
+  .scroll-tree li{
+    background-color: $colorLight !important;
+  }
+}
+
+
+#viewer-header-container{
+  position: relative;
+  min-width: 46em;
+  margin: 0 auto !important;
+  background-color: $colorLight !important;
+  z-index: 20;
+}
+
+  #viewer-header{
+    opacity: 0.1;
+
+    &:hover{
+      z-index: 30;
+      opacity: 1;
+
+    }
+  }
+
+#viewer-container{
+  position: relative;
+  z-index: 20;
+  margin: 0 auto;
+  font-size: 12px !important;
+  line-height: 1.6em !important;
+  background: $colorLight !important;
+
+  a{
+    color: $colorMain !important;
+  }
+}
+
+#viewer-top-controls-container{
+  margin-top: -14px !important;
+}
+
+#title-and-status-holder{
+  margin: 0 !important;
+  padding-left: 0 !important;
+
+  span{
+    @extend .meta;
+  }   
+}
+
+/**
+ * CARD STYLING
+ */
+#entries{
+  border: 0;
+  padding: 0 !important;
+  border: none !important;
+  @extend .cwrapper;
+
+  #current-entry{
+    opacity: 1 !important;
+    .collapsed{
+      border-left: solid 2px $colorMain !important;
+    }    
+  }
+
+  .entry{
+    margin: 0 auto !important;
+    background: transparent !important;
+    border-bottom: none !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    
+    .card{
+      width: $widthMain;
+      padding-left: 2em;
+      padding-right: 2em;
+      border: 0;
+      border-bottom: solid 1px $colorMain;
+      @extend .cwrapper;
+      @include box-shadow(none);
+    }
+
+    .card-common{
+      background: transparent !important;
+    }
+
+    .card-actions{
+      border: none !important;
+      width: 120%;
+      margin-left: -10%;
+    }
+
+    .card-content{
+      padding: 0.5em 0em !important;
+    }
+    
+    .entry-main{
+      overflow: hidden !important;
+    }
+      
+    .entry-date{
+      font-size: 12px;
+      float: none !important;
+      @extend .meta;
+    }
+
+    .entry-title{
+      max-width: inherit !important;
+
+      a{
+        @extend .tk-heading;
+        font-weight: bold;
+        font-size: 1.3em;
+        line-height: 1.2em;
+        letter-spacing: -1px;
+      }
+    }
+
+    .entry-body{
+      @extend .tk-text;
+      max-width: inherit !important;
+
+      p{
+        margin-bottom: 1em;
+      }
+
+      pre, code {
+        font-size: 12px;
+        @extend .tk-meta;
+      }
+    }
+    .entry-author{
+      font-size: 12px;
+      @extend .meta;
+    }
+
+    .entry-icons-placeholder{
+      display: block;
+      position: absolute;
+      left: -1.5em;
+      top: 0.6em;
+    }
+
+    .card-actions,
+    .entry-actions{
+      font-size: 12px;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      border-left: none !important;
+      margin-bottom: 2em*16em/13em !important;
+      text-align: center;
+      opacity: 0.5;
+
+      &:hover{
+        opacity: 1;
+      }
+    }
+
+    /**
+     * LIST VIEW - COLLAPSED
+     */
+    .collapsed{
+      padding: 0.1875em 0 0.25em !important;
+      height: 1.8125em !important;
+      border-bottom: solid 1px #eee !important;
+      border-left: 0 !important;
+      width: $widthMain*1.2 !important;
+      background: transparent !important;
+      @extend .cwrapper;
+
+      .entry-source-title,
+      .entry-title, 
+      .entry-date{
+        line-height: 29px !important;
+      }
+
+      .entry-source-title,
+      .entry-title,
+      .entry-secondary-snippet{
+        font-size: 12px !important;
+      }
+
+      .entry-date{
+        position: absolute;
+        right: 0;
+      }
+
+      .entry-source-title{
+        width: 8em !important;
+        @extend .tk-heading;
+      }
+      
+      .entry-icons{
+        margin-top: -12px !important;
+      }        
+
+      .entry-secondary{
+        margin-left: 10em !important;
+        margin-right: 8em !important;
+        @extend .tk-heading;
+      }
+
+      .entry-title,
+      .entry-secondary-snippet{
+        display: inline;
+      }
+
+      .entry-original{
+        right: 5px !important;
+      }
+    }
+
+    &.read{
+      opacity: 0.7;
+      .collapsed{
+        border-bottom: 0 !important;
+        
+        .entry-title{
+          font-weight: bold;
+          color: lighten($colorText, 30);
+        }
+      }
+    }
+
+    /**
+     * LIST VIEW - EXPANDED
+     */
+    &.expanded{
+      .collapsed{
+        // fadeout the title of the list item
+        opacity: 0.2;
+
+        &:hover{
+          @include transition(opacity, 0.2s);
+          opacity: 1;
+        }
+      }
+
+      .entry-container{
+        @extend .cwrapper;
+        padding: 0 !important;
+        width: $widthMain !important;
+        border-left: none !important;
+        background: none;
+      }
+    }
+  }
+}
+
+
+/**
+ * RESPONSIVE
+ */
+@media only screen and (min-width: 1024px) {
+  #viewer-container{
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #viewer-container{
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+ 
+}
