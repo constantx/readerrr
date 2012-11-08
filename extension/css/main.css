@@ -113,10 +113,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -ms-border-radius: 0 3px 3px 0;
     -o-border-radius: 0 3px 3px 0;
     border-radius: 0 3px 3px 0;
-    -webkit-font-smoothing: subpixel-antialias;
     z-index: 11; }
 
-/* line 81, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 #nav {
   position: relative;
   z-index: 10;
@@ -128,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-transition: all, 0.2s, ease-in-out;
   -o-transition: all, 0.2s, ease-in-out;
   transition: all, 0.2s, ease-in-out; }
-  /* line 90, ../scss/main.scss */
+  /* line 89, ../scss/main.scss */
   #nav:hover {
     z-index: 30;
     border-left: 0;
@@ -136,12 +135,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     -webkit-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15); }
-  /* line 98, ../scss/main.scss */
+  /* line 97, ../scss/main.scss */
   #nav .section,
   #nav .scroll-tree li {
     background-color: #fffffa !important; }
 
-/* line 104, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 #viewer-header-container {
   position: relative;
   min-width: 46em;
@@ -149,16 +148,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #fffffa !important;
   z-index: 20; }
 
-/* line 112, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 #viewer-header {
   opacity: 0.1;
   background-color: transparent !important; }
-  /* line 116, ../scss/main.scss */
+  /* line 115, ../scss/main.scss */
   #viewer-header:hover {
     z-index: 30;
     opacity: 1; }
 
-/* line 123, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 #viewer-container {
   position: relative;
   z-index: 20;
@@ -166,15 +165,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-size: 12px !important;
   line-height: 1.6em !important;
   background: #fffffa !important; }
-  /* line 131, ../scss/main.scss */
+  /* line 130, ../scss/main.scss */
   #viewer-container a {
     color: #f4524e !important; }
 
-/* line 136, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 #viewer-top-controls-container {
   margin-top: -14px !important; }
 
-/* line 140, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 #title-and-status-holder {
   margin: 0 !important;
   padding-left: 0 !important; }
@@ -182,18 +181,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /**
  * CARD STYLING
  */
-/* line 152, ../scss/main.scss */
+/* line 151, ../scss/main.scss */
 #entries {
   border: 0;
   padding: 0 !important;
   border: none !important; }
-  /* line 158, ../scss/main.scss */
+  /* line 157, ../scss/main.scss */
   #entries #current-entry {
     opacity: 1 !important; }
-    /* line 160, ../scss/main.scss */
+    /* line 159, ../scss/main.scss */
     #entries #current-entry .collapsed {
       border-left: solid 2px #f4524e !important; }
-  /* line 165, ../scss/main.scss */
+  /* line 164, ../scss/main.scss */
   #entries .entry {
     margin: 0 auto !important;
     background: transparent !important;
@@ -206,7 +205,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     /**
      * LIST VIEW - EXPANDED
      */ }
-    /* line 172, ../scss/main.scss */
+    /* line 171, ../scss/main.scss */
     #entries .entry .card {
       width: 36em;
       padding-left: 2em;
@@ -216,52 +215,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; }
-    /* line 182, ../scss/main.scss */
+    /* line 181, ../scss/main.scss */
     #entries .entry .card-common {
       background: transparent !important; }
-    /* line 186, ../scss/main.scss */
+    /* line 185, ../scss/main.scss */
     #entries .entry .card-actions {
       border: none !important;
       width: 120%;
       margin-left: -10%; }
-    /* line 192, ../scss/main.scss */
+    /* line 191, ../scss/main.scss */
     #entries .entry .card-content {
       padding: 0.5em 0em !important; }
-    /* line 196, ../scss/main.scss */
+    /* line 195, ../scss/main.scss */
     #entries .entry .entry-main {
       overflow: hidden !important; }
-    /* line 200, ../scss/main.scss */
+    /* line 199, ../scss/main.scss */
     #entries .entry .entry-date {
       font-size: 12px;
       float: none !important; }
-    /* line 206, ../scss/main.scss */
+    /* line 205, ../scss/main.scss */
     #entries .entry .entry-title {
       max-width: inherit !important; }
-      /* line 209, ../scss/main.scss */
+      /* line 208, ../scss/main.scss */
       #entries .entry .entry-title a {
         font-weight: bold;
         font-size: 1.3em;
         line-height: 1.2em;
         letter-spacing: -1px; }
-    /* line 218, ../scss/main.scss */
+    /* line 217, ../scss/main.scss */
     #entries .entry .entry-body {
       max-width: inherit !important; }
-      /* line 222, ../scss/main.scss */
+      /* line 221, ../scss/main.scss */
       #entries .entry .entry-body p {
         margin-bottom: 1em; }
-      /* line 226, ../scss/main.scss */
+      /* line 225, ../scss/main.scss */
       #entries .entry .entry-body pre, #entries .entry .entry-body code {
         font-size: 12px; }
-    /* line 231, ../scss/main.scss */
+    /* line 230, ../scss/main.scss */
     #entries .entry .entry-author {
       font-size: 12px; }
-    /* line 236, ../scss/main.scss */
+    /* line 235, ../scss/main.scss */
     #entries .entry .entry-icons-placeholder {
       display: block;
       position: absolute;
       left: -1.5em;
       top: 0.6em; }
-    /* line 244, ../scss/main.scss */
+    /* line 243, ../scss/main.scss */
     #entries .entry .card-actions,
     #entries .entry .entry-actions {
       font-size: 12px;
@@ -271,11 +270,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       margin-bottom: 2.46154em !important;
       text-align: center;
       opacity: 0.5; }
-      /* line 253, ../scss/main.scss */
+      /* line 252, ../scss/main.scss */
       #entries .entry .card-actions:hover,
       #entries .entry .entry-actions:hover {
         opacity: 1; }
-    /* line 261, ../scss/main.scss */
+    /* line 260, ../scss/main.scss */
     #entries .entry .collapsed {
       padding: 0.1875em 0 0.25em !important;
       height: 1.8125em !important;
@@ -283,58 +282,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
       border-left: 0 !important;
       width: 43.2em !important;
       background: transparent !important; }
-      /* line 272, ../scss/main.scss */
+      /* line 271, ../scss/main.scss */
       #entries .entry .collapsed .entry-source-title,
       #entries .entry .collapsed .entry-title,
       #entries .entry .collapsed .entry-date {
         line-height: 29px !important; }
-      /* line 278, ../scss/main.scss */
+      /* line 277, ../scss/main.scss */
       #entries .entry .collapsed .entry-source-title,
       #entries .entry .collapsed .entry-title,
       #entries .entry .collapsed .entry-secondary-snippet {
         font-size: 12px !important; }
-      /* line 282, ../scss/main.scss */
+      /* line 281, ../scss/main.scss */
       #entries .entry .collapsed .entry-date {
         position: absolute;
         right: 0; }
-      /* line 287, ../scss/main.scss */
+      /* line 286, ../scss/main.scss */
       #entries .entry .collapsed .entry-source-title {
         width: 8em !important; }
-      /* line 292, ../scss/main.scss */
+      /* line 291, ../scss/main.scss */
       #entries .entry .collapsed .entry-icons {
         margin-top: -12px !important; }
-      /* line 296, ../scss/main.scss */
+      /* line 295, ../scss/main.scss */
       #entries .entry .collapsed .entry-secondary {
         margin-left: 10em !important;
         margin-right: 8em !important; }
-      /* line 303, ../scss/main.scss */
+      /* line 302, ../scss/main.scss */
       #entries .entry .collapsed .entry-title,
       #entries .entry .collapsed .entry-secondary-snippet {
         display: inline; }
-      /* line 307, ../scss/main.scss */
+      /* line 306, ../scss/main.scss */
       #entries .entry .collapsed .entry-original {
         right: 5px !important; }
-    /* line 312, ../scss/main.scss */
+    /* line 311, ../scss/main.scss */
     #entries .entry.read {
       opacity: 0.7; }
-      /* line 314, ../scss/main.scss */
+      /* line 313, ../scss/main.scss */
       #entries .entry.read .collapsed {
         border-bottom: 0 !important; }
-        /* line 317, ../scss/main.scss */
+        /* line 316, ../scss/main.scss */
         #entries .entry.read .collapsed .entry-title {
           font-weight: bold;
           color: #8f8f8f; }
-    /* line 328, ../scss/main.scss */
+    /* line 327, ../scss/main.scss */
     #entries .entry.expanded .collapsed {
       opacity: 0.2; }
-      /* line 332, ../scss/main.scss */
+      /* line 331, ../scss/main.scss */
       #entries .entry.expanded .collapsed:hover {
         -webkit-transition: opacity, 0.2s;
         -moz-transition: opacity, 0.2s;
         -o-transition: opacity, 0.2s;
         transition: opacity, 0.2s;
         opacity: 1; }
-    /* line 338, ../scss/main.scss */
+    /* line 337, ../scss/main.scss */
     #entries .entry.expanded .entry-container {
       padding: 0 !important;
       width: 36em !important;
@@ -345,10 +344,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * RESPONSIVE
  */
 @media only screen and (min-width: 1024px) {
-  /* line 354, ../scss/main.scss */
+  /* line 353, ../scss/main.scss */
   #viewer-container {
     font-size: 14px !important; } }
 @media only screen and (min-width: 1440px) {
-  /* line 360, ../scss/main.scss */
+  /* line 359, ../scss/main.scss */
   #viewer-container {
     font-size: 16px !important; } }
