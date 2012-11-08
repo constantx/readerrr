@@ -146,7 +146,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   position: relative;
   min-width: 46em;
   margin: 0 auto !important;
-  background-color: #fffffa !important;
+  background-color: transparent !important;
   z-index: 20; }
 
 /* line 112, ../scss/main.scss */
