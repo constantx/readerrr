@@ -73,7 +73,6 @@ $colorLight: #fffffa;
     color: $colorMain;
     @include icon-font;
     @include border-radius(0 3px 3px 0);
-    @include font-smoothing(subpixel-antialias);
     z-index: 11;
   }
 }
@@ -167,7 +166,7 @@ $colorLight: #fffffa;
     background: transparent !important;
     border-bottom: none !important;
     text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
+    @include font-smoothing(antialiased);
     
     .card{
       width: $widthMain;
