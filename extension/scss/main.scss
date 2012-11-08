@@ -63,6 +63,7 @@ $colorLight: #fffffa;
   background: $colorLight;
 
   &:before{
+    font-size: 2em;
     display: block;
     position: absolute;
     content: '\f03b';
@@ -81,15 +82,14 @@ $colorLight: #fffffa;
   position: relative;
   z-index: 10;
   background-color: $colorLight;
-  padding: 0 1em 2em 2em;
+  padding: 0 1em 2em 0;
   margin-right: -100%;
-  @include transition(all, 0.2s, ease-in-out);
   border-left: solid 50px transparent;
+  @include transition(all, 0.2s, ease-in-out);
 
   &:hover{
     z-index: 30;
     border-left: 0;
-    padding-left: 1em;
     padding-right: 1em;
     @include box-shadow(1px 0px 3px 0px rgba(0,0,0,0.15));
   }
@@ -105,12 +105,13 @@ $colorLight: #fffffa;
   position: relative;
   min-width: 46em;
   margin: 0 auto !important;
-  background-color: transparent !important;
+  background-color: $colorLight !important;
   z-index: 20;
 }
 
   #viewer-header{
     opacity: 0.1;
+    background-color: transparent !important;
 
     &:hover{
       z-index: 30;
