@@ -1,6 +1,6 @@
-# readerrr
-google chrome extension | a better reading experience
-I made this cause I got tired of Google Reader default skin.
+# readerrr | a better reading experience
+
+This is a google chrome extension I made 'cause I got tired of Google Reader default skin.
 
 ## Release&hellip;
 &hellip; can be found [on the chrome webstore](https://chrome.google.com/webstore/detail/readerrr/dljhagpflpblckhpalcondhfnekglcgl)
