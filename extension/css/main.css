@@ -142,7 +142,7 @@
   position: relative;
   z-index: 20;
   margin: 0 auto;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 1.5em !important;
   background: #fffffa !important;
 }
@@ -401,18 +401,9 @@
  */
 
 /* line 311 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
-@media only screen and (min-width: 1024px) {
-
-/* line 312 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
-  #viewer-container {
-    font-size: 14px !important;
-  }
-}
-
-/* line 317 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @media only screen and (min-width: 1440px) {
 
-/* line 318 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 312 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
   #viewer-container {
     font-size: 16px !important;
   }
