@@ -4,7 +4,7 @@ This is a google chrome extension I made 'cause I got tired of Google Reader def
 ### Release&hellip;
 &hellip; can be found [on the chrome webstore](https://chrome.google.com/webstore/detail/readerrr/dljhagpflpblckhpalcondhfnekglcgl)
 
-### Contribution is easy!
+### Let's make it better together!
 - install [foreman](https://github.com/ddollar/foreman)
 - `npm install`
 - `foreman start` to start the coffee (JS) and stylus (CSS) compiler/watcher
