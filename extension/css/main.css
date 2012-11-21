@@ -12,15 +12,6 @@
   font-style: normal;
 }
 
-/* line 14 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
-mixin icon-font {
-  font-family: 'FontAwesome';
-  text-align: center;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: inherit;
-}
-
 /* line 22 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 .cwrapper,
 #entries,
@@ -31,7 +22,7 @@ mixin icon-font {
   margin-right: auto !important;
 }
 
-/* line 28 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 26 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 .tk-heading,
 #entries .entry .entry-title a,
 #entries .entry .collapsed .entry-source-title,
@@ -39,14 +30,14 @@ mixin icon-font {
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif !important;
 }
 
-/* line 31 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 29 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 .tk-text,
 #entries .entry .entry-body {
   font-family: 'Droid Serif', "Times New Roman", Georgia, serif !important;
   color: #424242 !important;
 }
 
-/* line 35 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 33 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 .tk-meta,
 .meta,
 #title-and-status-holder span,
@@ -58,7 +49,7 @@ mixin icon-font {
   font-weight: normal !important;
 }
 
-/* line 40 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 38 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 .meta,
 #title-and-status-holder span,
 #entries .entry .entry-date,
@@ -66,21 +57,28 @@ mixin icon-font {
   color: #a8a8a8;
 }
 
-/* line 44 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 42 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * LAYOUT
  */
 
-/* line 48 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 46 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #chrome {
   margin: 0 auto 0 !important;
   padding-left: 3em;
   padding-right: 3em;
   background: #fffffa;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* line 54 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #chrome:before {
+  font-family: 'FontAwesome';
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
   font-size: 2em;
   display: block;
   position: absolute;
@@ -89,7 +87,6 @@ mixin icon-font {
   top: 50%;
   padding: 0.4em 0 0.3em;
   color: #f4524e;
-  mixin: icon-font;
   -webkit-border-radius: 0 3px 3px 0;
   z-index: 11;
 }
@@ -146,106 +143,104 @@ mixin icon-font {
   z-index: 20;
   margin: 0 auto;
   font-size: 12px !important;
-  line-height: 1.6em !important;
+  line-height: 1.5em !important;
   background: #fffffa !important;
 }
 
-/* line 116 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 115 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #viewer-container a {
   color: #f4524e !important;
 }
 
-/* line 121 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 118 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #viewer-top-controls-container {
   margin-top: -14px !important;
 }
 
-/* line 125 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 121 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #title-and-status-holder {
   margin: 0 !important;
   padding-left: 0 !important;
 }
 
-/* line 129 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 125 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 
-/* line 134 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 130 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * CARD STYLING
  */
 
-/* line 137 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 133 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries {
   border: 0;
   padding: 0 !important;
   border: none !important;
 }
 
-/* line 143 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 139 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries #current-entry {
   opacity: 1 !important;
 }
 
-/* line 145 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 141 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries #current-entry .collapsed {
   border-left: solid 2px #f4524e !important;
 }
 
-/* line 150 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 144 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry {
   margin: 0 auto !important;
   background: transparent !important;
   border-bottom: none !important;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
 /**
      * LIST VIEW - COLLAPSED
      */
 }
 
-/* line 157 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 149 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card {
   width: 36em;
   padding-left: 2em;
   padding-right: 2em;
   border: 0;
   border-bottom: solid 1px #f4524e;
-  include: box-shadow(none);
+  -webkit-box-shadow: none;
 }
 
-/* line 167 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 159 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card-common {
   background: transparent !important;
 }
 
-/* line 171 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 163 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card-actions {
   border: none !important;
   width: 120%;
   margin-left: -10%;
 }
 
-/* line 177 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 169 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card-content {
   padding: 0.5em 0em !important;
 }
 
-/* line 181 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 173 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-main {
   overflow: hidden !important;
 }
 
-/* line 185 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 177 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-date {
   font-size: 12px;
   float: none !important;
 }
 
-/* line 191 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 183 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-title {
   max-width: inherit !important;
 }
 
-/* line 194 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 186 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-title a {
   font-weight: bold;
   font-size: 1.3em;
@@ -253,28 +248,34 @@ mixin icon-font {
   letter-spacing: -1px;
 }
 
-/* line 203 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 193 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-body {
   max-width: inherit !important;
 }
 
-/* line 207 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 197 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-body p {
   margin-bottom: 1em;
 }
 
-/* line 211 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 199 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-body p a {
+  text-decoration: none;
+  padding-bottom: 0.1em;
+}
+
+/* line 205 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-body pre,
 #entries .entry .entry-body code {
   font-size: 12px;
 }
 
-/* line 216 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 210 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-author {
   font-size: 12px;
 }
 
-/* line 221 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 215 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .entry-icons-placeholder {
   display: block;
   position: absolute;
@@ -282,7 +283,7 @@ mixin icon-font {
   top: 0.6em;
 }
 
-/* line 228 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 222 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card-actions,
 #entries .entry .entry-actions {
   font-size: 12px;
@@ -294,13 +295,13 @@ mixin icon-font {
   opacity: 0.5;
 }
 
-/* line 237 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 231 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .card-actions:hover,
 #entries .entry .entry-actions:hover {
   opacity: 1;
 }
 
-/* line 245 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 239 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed {
   padding: 0.1875em 0 0.25em !important;
   height: 1.8125em !important;
@@ -310,83 +311,83 @@ mixin icon-font {
   background: transparent !important;
 }
 
-/* line 254 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 248 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-source-title,
 #entries .entry .collapsed .entry-title,
 #entries .entry .collapsed .entry-date {
   line-height: 29px !important;
 }
 
-/* line 258 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 252 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-source-title,
 #entries .entry .collapsed .entry-title,
 #entries .entry .collapsed .entry-secondary-snippet {
   font-size: 12px !important;
 }
 
-/* line 262 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 256 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-date {
   position: absolute;
   right: 0;
 }
 
-/* line 267 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 261 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-source-title {
   width: 8em !important;
 }
 
-/* line 272 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 266 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-icons {
   margin-top: -12px !important;
 }
 
-/* line 276 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 270 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-secondary {
   margin-left: 10em !important;
   margin-right: 8em !important;
 }
 
-/* line 282 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 276 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-title,
 #entries .entry .collapsed .entry-secondary-snippet {
   display: inline;
 }
 
-/* line 286 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 280 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry .collapsed .entry-original {
   right: 5px !important;
 }
 
-/* line 289 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 283 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.read {
   opacity: 0.7;
 }
 
-/* line 291 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 285 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.read .collapsed {
   border-bottom: 0 !important;
 }
 
-/* line 294 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 288 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.read .collapsed .entry-title {
   font-weight: bold;
   color: #8f8f8f;
 }
 
-/* line 298 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 292 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 
-/* line 299 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 293 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.expanded .collapsed {
   opacity: 0.2;
 }
 
-/* line 303 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 297 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.expanded .collapsed:hover {
-  include: transition(opacity, 0.2s);
+  -webkit-transition: opacity 0.2s linear;
   opacity: 1;
 }
 
-/* line 307 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 301 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries .entry.expanded .entry-container {
   padding: 0 !important;
   width: 36em !important;
@@ -394,24 +395,24 @@ mixin icon-font {
   background: none;
 }
 
-/* line 314 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 308 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * RESPONSIVE
  */
 
-/* line 317 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 311 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @media only screen and (min-width: 1024px) {
 
-/* line 318 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 312 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
   #viewer-container {
     font-size: 14px !important;
   }
 }
 
-/* line 323 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 317 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @media only screen and (min-width: 1440px) {
 
-/* line 324 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+/* line 318 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
   #viewer-container {
     font-size: 16px !important;
   }
