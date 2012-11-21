@@ -1,4 +1,4 @@
-# readerrr | a better reading experience
+# readerrr | a better google reader reading experience
 This is a google chrome extension I made 'cause I got tired of Google Reader default skin.
 
 ### Release&hellip;
