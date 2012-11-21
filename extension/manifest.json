@@ -1,8 +1,8 @@
 {
   "name": "readerrr",
-  "version": "0.2.4",
+  "version": "0.2.7",
   "manifest_version": 2,
-  "description": "better readability for google reader",
+  "description": "a better reading experience for google reader",
   "icons": { 
     "16": "icon16.png",
     "48": "icon48.png",
@@ -23,7 +23,6 @@
       ]
     }
   ],
-
   "web_accessible_resources" : [
     "css/font.css",
     "fonts/fontawesome-webfont.ttf"
