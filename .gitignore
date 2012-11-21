@@ -39,5 +39,3 @@ Thumbs.db
 
 # node.js related
 node_modules
-public/config.rb
-.sass-cache

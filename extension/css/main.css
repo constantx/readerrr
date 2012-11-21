@@ -1,121 +1,100 @@
-@import "http://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif:400,700,400italic,700italic";
-/* line 17, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
 
-/* line 22, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1; }
+/* line 1 : /Users/tnguyen/Dropbox/projects/greader/node_modules/stylus/lib/functions/index.styl */
 
-/* line 24, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none; }
+/* line 6 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+@import "chrome-extension://__MSG_@@extension_id__/css/font.css";
 
-/* line 26, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* line 28, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-/* line 30, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none; }
-  /* line 103, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
-
-/* line 32, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none; }
-
-/* line 116, ../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
-
+/* line 8 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("chrome-extension://__MSG_@@extension_id__/fonts/fontawesome-webfont.ttf") format("truetype");
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/fontawesome-webfont.ttf") format('truetype');
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
-/* line 31, ../scss/main.scss */
-.cwrapper, #entries, #entries .entry .card, #entries .entry .collapsed, #entries .entry.expanded .entry-container {
+/* line 14 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+mixin icon-font {
+  font-family: 'FontAwesome';
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/* line 22 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+.cwrapper,
+#entries,
+#entries .entry .card,
+#entries .entry .collapsed,
+#entries .entry.expanded .entry-container {
   margin-left: auto !important;
-  margin-right: auto !important; }
+  margin-right: auto !important;
+}
 
-/* line 36, ../scss/main.scss */
-.meta, #title-and-status-holder span, #entries .entry .entry-date, #entries .entry .entry-author {
-  color: #a8a8a8; }
+/* line 28 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+.tk-heading,
+#entries .entry .entry-title a,
+#entries .entry .collapsed .entry-source-title,
+#entries .entry .collapsed .entry-secondary {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif !important;
+}
 
-/* line 41, ../scss/main.scss */
-.tk-heading, #entries .entry .entry-title a, #entries .entry .collapsed .entry-source-title, #entries .entry .collapsed .entry-secondary {
-  font-family: 'Droid Sans', Helvetica, Arial, sans-serif !important; }
-
-/* line 45, ../scss/main.scss */
-.tk-text, #entries .entry .entry-body {
+/* line 31 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+.tk-text,
+#entries .entry .entry-body {
   font-family: 'Droid Serif', "Times New Roman", Georgia, serif !important;
-  color: #424242 !important; }
+  color: #424242 !important;
+}
 
-/* line 50, ../scss/main.scss */
-.tk-meta, .meta, #title-and-status-holder span, #entries .entry .entry-date, #entries .entry .entry-author, #entries .entry .entry-body pre, #entries .entry .entry-body code {
-  font-family: "Panic Sans", "inconsolata",Monaco,'Courier New',monospace !important;
-  font-weight: normal !important; }
+/* line 35 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+.tk-meta,
+.meta,
+#title-and-status-holder span,
+#entries .entry .entry-date,
+#entries .entry .entry-body pre,
+#entries .entry .entry-body code,
+#entries .entry .entry-author {
+  font-family: "Panic Sans", "inconsolata", Monaco, 'Courier New', monospace !important;
+  font-weight: normal !important;
+}
 
+/* line 40 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+.meta,
+#title-and-status-holder span,
+#entries .entry .entry-date,
+#entries .entry .entry-author {
+  color: #a8a8a8;
+}
+
+/* line 44 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * LAYOUT
  */
-/* line 59, ../scss/main.scss */
+
+/* line 48 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #chrome {
   margin: 0 auto 0 !important;
   padding-left: 3em;
   padding-right: 3em;
-  background: #fffffa; }
-  /* line 65, ../scss/main.scss */
-  #chrome:before {
-    font-size: 2em;
-    display: block;
-    position: absolute;
-    content: '\f03b';
-    left: 5px;
-    top: 50%;
-    padding: 0.4em 0 0.3em;
-    color: #f4524e;
-    font-family: 'FontAwesome';
-    text-align: center;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    -webkit-border-radius: 0 3px 3px 0;
-    -moz-border-radius: 0 3px 3px 0;
-    -ms-border-radius: 0 3px 3px 0;
-    -o-border-radius: 0 3px 3px 0;
-    border-radius: 0 3px 3px 0;
-    z-index: 11; }
+  background: #fffffa;
+}
 
-/* line 80, ../scss/main.scss */
+/* line 54 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#chrome:before {
+  font-size: 2em;
+  display: block;
+  position: absolute;
+  content: '\f03b';
+  left: 5px;
+  top: 50%;
+  padding: 0.4em 0 0.3em;
+  color: #f4524e;
+  mixin: icon-font;
+  -webkit-border-radius: 0 3px 3px 0;
+  z-index: 11;
+}
+
+/* line 69 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #nav {
   position: relative;
   z-index: 10;
@@ -123,231 +102,317 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0 1em 2em 0;
   margin-right: -100%;
   border-left: solid 50px transparent;
-  -webkit-transition: all, 0.2s, ease-in-out;
-  -moz-transition: all, 0.2s, ease-in-out;
-  -o-transition: all, 0.2s, ease-in-out;
-  transition: all, 0.2s, ease-in-out; }
-  /* line 89, ../scss/main.scss */
-  #nav:hover {
-    z-index: 30;
-    border-left: 0;
-    padding-right: 1em;
-    -webkit-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 1px 0px 3px 0px rgba(0, 0, 0, 0.15); }
-  /* line 97, ../scss/main.scss */
-  #nav .section,
-  #nav .scroll-tree li {
-    background-color: #fffffa !important; }
+  -webkit-transition: all 0.2s ease-in-out;
+}
 
-/* line 103, ../scss/main.scss */
+/* line 79 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#nav:hover {
+  z-index: 30;
+  border-left: 0;
+  padding-right: 1em;
+  -webkit-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.15);
+}
+
+/* line 86 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#nav .section,
+#nav .scroll-tree li {
+  background-color: #fffffa !important;
+}
+
+/* line 89 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #viewer-header-container {
   position: relative;
   min-width: 46em;
   margin: 0 auto !important;
   background-color: #fffffa !important;
-  z-index: 20; }
+  z-index: 20;
+}
 
-/* line 111, ../scss/main.scss */
-#viewer-header {
+/* line 97 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#viewer-header-container #viewer-header {
   opacity: 0.1;
-  background-color: transparent !important; }
-  /* line 115, ../scss/main.scss */
-  #viewer-header:hover {
-    z-index: 30;
-    opacity: 1; }
+  background-color: transparent !important;
+}
 
-/* line 122, ../scss/main.scss */
+/* line 101 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#viewer-header-container #viewer-header:hover {
+  z-index: 30;
+  opacity: 1;
+}
+
+/* line 108 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #viewer-container {
   position: relative;
   z-index: 20;
   margin: 0 auto;
   font-size: 12px !important;
   line-height: 1.6em !important;
-  background: #fffffa !important; }
-  /* line 130, ../scss/main.scss */
-  #viewer-container a {
-    color: #f4524e !important; }
+  background: #fffffa !important;
+}
 
-/* line 135, ../scss/main.scss */
+/* line 116 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#viewer-container a {
+  color: #f4524e !important;
+}
+
+/* line 121 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #viewer-top-controls-container {
-  margin-top: -14px !important; }
+  margin-top: -14px !important;
+}
 
-/* line 139, ../scss/main.scss */
+/* line 125 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #title-and-status-holder {
   margin: 0 !important;
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+}
 
+/* line 129 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+
+/* line 134 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * CARD STYLING
  */
-/* line 151, ../scss/main.scss */
+
+/* line 137 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 #entries {
   border: 0;
   padding: 0 !important;
-  border: none !important; }
-  /* line 157, ../scss/main.scss */
-  #entries #current-entry {
-    opacity: 1 !important; }
-    /* line 159, ../scss/main.scss */
-    #entries #current-entry .collapsed {
-      border-left: solid 2px #f4524e !important; }
-  /* line 164, ../scss/main.scss */
-  #entries .entry {
-    margin: 0 auto !important;
-    background: transparent !important;
-    border-bottom: none !important;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    /**
+  border: none !important;
+}
+
+/* line 143 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries #current-entry {
+  opacity: 1 !important;
+}
+
+/* line 145 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries #current-entry .collapsed {
+  border-left: solid 2px #f4524e !important;
+}
+
+/* line 150 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry {
+  margin: 0 auto !important;
+  background: transparent !important;
+  border-bottom: none !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+/**
      * LIST VIEW - COLLAPSED
      */
-    /**
-     * LIST VIEW - EXPANDED
-     */ }
-    /* line 171, ../scss/main.scss */
-    #entries .entry .card {
-      width: 36em;
-      padding-left: 2em;
-      padding-right: 2em;
-      border: 0;
-      border-bottom: solid 1px #f4524e;
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none; }
-    /* line 181, ../scss/main.scss */
-    #entries .entry .card-common {
-      background: transparent !important; }
-    /* line 185, ../scss/main.scss */
-    #entries .entry .card-actions {
-      border: none !important;
-      width: 120%;
-      margin-left: -10%; }
-    /* line 191, ../scss/main.scss */
-    #entries .entry .card-content {
-      padding: 0.5em 0em !important; }
-    /* line 195, ../scss/main.scss */
-    #entries .entry .entry-main {
-      overflow: hidden !important; }
-    /* line 199, ../scss/main.scss */
-    #entries .entry .entry-date {
-      font-size: 12px;
-      float: none !important; }
-    /* line 205, ../scss/main.scss */
-    #entries .entry .entry-title {
-      max-width: inherit !important; }
-      /* line 208, ../scss/main.scss */
-      #entries .entry .entry-title a {
-        font-weight: bold;
-        font-size: 1.3em;
-        line-height: 1.2em;
-        letter-spacing: -1px; }
-    /* line 217, ../scss/main.scss */
-    #entries .entry .entry-body {
-      max-width: inherit !important; }
-      /* line 221, ../scss/main.scss */
-      #entries .entry .entry-body p {
-        margin-bottom: 1em; }
-      /* line 225, ../scss/main.scss */
-      #entries .entry .entry-body pre, #entries .entry .entry-body code {
-        font-size: 12px; }
-    /* line 230, ../scss/main.scss */
-    #entries .entry .entry-author {
-      font-size: 12px; }
-    /* line 235, ../scss/main.scss */
-    #entries .entry .entry-icons-placeholder {
-      display: block;
-      position: absolute;
-      left: -1.5em;
-      top: 0.6em; }
-    /* line 243, ../scss/main.scss */
-    #entries .entry .card-actions,
-    #entries .entry .entry-actions {
-      font-size: 12px;
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-      border-left: none !important;
-      margin-bottom: 2.46154em !important;
-      text-align: center;
-      opacity: 0.5; }
-      /* line 252, ../scss/main.scss */
-      #entries .entry .card-actions:hover,
-      #entries .entry .entry-actions:hover {
-        opacity: 1; }
-    /* line 260, ../scss/main.scss */
-    #entries .entry .collapsed {
-      padding: 0.1875em 0 0.25em !important;
-      height: 1.8125em !important;
-      border-bottom: solid 1px #eee !important;
-      border-left: 0 !important;
-      width: 43.2em !important;
-      background: transparent !important; }
-      /* line 271, ../scss/main.scss */
-      #entries .entry .collapsed .entry-source-title,
-      #entries .entry .collapsed .entry-title,
-      #entries .entry .collapsed .entry-date {
-        line-height: 29px !important; }
-      /* line 277, ../scss/main.scss */
-      #entries .entry .collapsed .entry-source-title,
-      #entries .entry .collapsed .entry-title,
-      #entries .entry .collapsed .entry-secondary-snippet {
-        font-size: 12px !important; }
-      /* line 281, ../scss/main.scss */
-      #entries .entry .collapsed .entry-date {
-        position: absolute;
-        right: 0; }
-      /* line 286, ../scss/main.scss */
-      #entries .entry .collapsed .entry-source-title {
-        width: 8em !important; }
-      /* line 291, ../scss/main.scss */
-      #entries .entry .collapsed .entry-icons {
-        margin-top: -12px !important; }
-      /* line 295, ../scss/main.scss */
-      #entries .entry .collapsed .entry-secondary {
-        margin-left: 10em !important;
-        margin-right: 8em !important; }
-      /* line 302, ../scss/main.scss */
-      #entries .entry .collapsed .entry-title,
-      #entries .entry .collapsed .entry-secondary-snippet {
-        display: inline; }
-      /* line 306, ../scss/main.scss */
-      #entries .entry .collapsed .entry-original {
-        right: 5px !important; }
-    /* line 311, ../scss/main.scss */
-    #entries .entry.read {
-      opacity: 0.7; }
-      /* line 313, ../scss/main.scss */
-      #entries .entry.read .collapsed {
-        border-bottom: 0 !important; }
-        /* line 316, ../scss/main.scss */
-        #entries .entry.read .collapsed .entry-title {
-          font-weight: bold;
-          color: #8f8f8f; }
-    /* line 327, ../scss/main.scss */
-    #entries .entry.expanded .collapsed {
-      opacity: 0.2; }
-      /* line 331, ../scss/main.scss */
-      #entries .entry.expanded .collapsed:hover {
-        -webkit-transition: opacity, 0.2s;
-        -moz-transition: opacity, 0.2s;
-        -o-transition: opacity, 0.2s;
-        transition: opacity, 0.2s;
-        opacity: 1; }
-    /* line 337, ../scss/main.scss */
-    #entries .entry.expanded .entry-container {
-      padding: 0 !important;
-      width: 36em !important;
-      border-left: none !important;
-      background: none; }
+}
 
+/* line 157 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card {
+  width: 36em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: 0;
+  border-bottom: solid 1px #f4524e;
+  include: box-shadow(none);
+}
+
+/* line 167 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card-common {
+  background: transparent !important;
+}
+
+/* line 171 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card-actions {
+  border: none !important;
+  width: 120%;
+  margin-left: -10%;
+}
+
+/* line 177 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card-content {
+  padding: 0.5em 0em !important;
+}
+
+/* line 181 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-main {
+  overflow: hidden !important;
+}
+
+/* line 185 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-date {
+  font-size: 12px;
+  float: none !important;
+}
+
+/* line 191 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-title {
+  max-width: inherit !important;
+}
+
+/* line 194 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-title a {
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  letter-spacing: -1px;
+}
+
+/* line 203 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-body {
+  max-width: inherit !important;
+}
+
+/* line 207 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-body p {
+  margin-bottom: 1em;
+}
+
+/* line 211 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-body pre,
+#entries .entry .entry-body code {
+  font-size: 12px;
+}
+
+/* line 216 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-author {
+  font-size: 12px;
+}
+
+/* line 221 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .entry-icons-placeholder {
+  display: block;
+  position: absolute;
+  left: -1.5em;
+  top: 0.6em;
+}
+
+/* line 228 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card-actions,
+#entries .entry .entry-actions {
+  font-size: 12px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border-left: none !important;
+  margin-bottom: 32em/13em !important;
+  text-align: center;
+  opacity: 0.5;
+}
+
+/* line 237 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .card-actions:hover,
+#entries .entry .entry-actions:hover {
+  opacity: 1;
+}
+
+/* line 245 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed {
+  padding: 0.1875em 0 0.25em !important;
+  height: 1.8125em !important;
+  border-bottom: solid 1px #eee !important;
+  border-left: 0 !important;
+  width: 43.199999999999996em !important;
+  background: transparent !important;
+}
+
+/* line 254 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-source-title,
+#entries .entry .collapsed .entry-title,
+#entries .entry .collapsed .entry-date {
+  line-height: 29px !important;
+}
+
+/* line 258 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-source-title,
+#entries .entry .collapsed .entry-title,
+#entries .entry .collapsed .entry-secondary-snippet {
+  font-size: 12px !important;
+}
+
+/* line 262 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-date {
+  position: absolute;
+  right: 0;
+}
+
+/* line 267 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-source-title {
+  width: 8em !important;
+}
+
+/* line 272 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-icons {
+  margin-top: -12px !important;
+}
+
+/* line 276 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-secondary {
+  margin-left: 10em !important;
+  margin-right: 8em !important;
+}
+
+/* line 282 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-title,
+#entries .entry .collapsed .entry-secondary-snippet {
+  display: inline;
+}
+
+/* line 286 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry .collapsed .entry-original {
+  right: 5px !important;
+}
+
+/* line 289 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.read {
+  opacity: 0.7;
+}
+
+/* line 291 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.read .collapsed {
+  border-bottom: 0 !important;
+}
+
+/* line 294 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.read .collapsed .entry-title {
+  font-weight: bold;
+  color: #8f8f8f;
+}
+
+/* line 298 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+
+/* line 299 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.expanded .collapsed {
+  opacity: 0.2;
+}
+
+/* line 303 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.expanded .collapsed:hover {
+  include: transition(opacity, 0.2s);
+  opacity: 1;
+}
+
+/* line 307 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
+#entries .entry.expanded .entry-container {
+  padding: 0 !important;
+  width: 36em !important;
+  border-left: none !important;
+  background: none;
+}
+
+/* line 314 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 /**
  * RESPONSIVE
  */
+
+/* line 317 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @media only screen and (min-width: 1024px) {
-  /* line 353, ../scss/main.scss */
+
+/* line 318 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
   #viewer-container {
-    font-size: 14px !important; } }
+    font-size: 14px !important;
+  }
+}
+
+/* line 323 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
 @media only screen and (min-width: 1440px) {
-  /* line 359, ../scss/main.scss */
+
+/* line 324 : /Users/tnguyen/Dropbox/projects/greader/stylus/main.styl */
   #viewer-container {
-    font-size: 16px !important; } }
+    font-size: 16px !important;
+  }
+}
