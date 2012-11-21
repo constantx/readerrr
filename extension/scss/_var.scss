@@ -1,8 +1,0 @@
-$widthMain: 36em;
-$colorMain: #f4524e;
-$colorText: #424242;
-$colorLight: #fffffa;
-
-@mixin font-smoothing($var: antialiased){
-  -webkit-font-smoothing: $var;
-}
