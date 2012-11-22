@@ -1,11 +1,11 @@
 {
-    "name": "greader",
-    "version": "0.2.9",
-    "engines": {
-      "npm": "1.1.45"
-    },
-    "dependencies": {
-        "coffee-script": "1.4.0",
-        "stylus": "0.30.1"
-    }
+  "name": "greader",
+  "version": "0.2.10",
+  "engines": {
+    "npm": "1.1.45"
+  },
+  "dependencies": {
+    "coffee-script": "1.4.0",
+    "stylus": "0.30.1"
+  }
 }
