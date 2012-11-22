@@ -1,7 +1,8 @@
 {
     "name": "greader",
-    "version": "0.2.92.92.92.92.92.92.9nes": {
-        "npm": "1.1.45"
+    "version": "0.2.9",
+    "engines": {
+      "npm": "1.1.45"
     },
     "dependencies": {
         "coffee-script": "1.4.0",
