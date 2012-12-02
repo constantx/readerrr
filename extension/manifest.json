@@ -23,8 +23,14 @@
       ]
     }
   ],
+  
   "web_accessible_resources" : [
-    "css/font.css",
-    "fonts/fontawesome-webfont.ttf"
+    "fonts/fontawesome-webfont.ttf",
+    "fonts/DroidSerif-Regular-webfont.ttf",
+    "fonts/DroidSerif-Bold-webfont.ttf",
+    "fonts/DroidSerif-BoldItalic-webfont.ttf",
+    "fonts/DroidSerif-Italic-webfont.ttf",
+    "fonts/DroidSans-webfont.ttf",
+    "fonts/DroidSans-Bold-webfont.ttf"
   ]
 }

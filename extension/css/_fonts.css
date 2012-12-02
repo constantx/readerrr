@@ -1,0 +1,58 @@
+
+/* line 1 : /Users/constantx/Dropbox/projects/readerrr/node_modules/stylus/lib/functions/index.styl */
+
+/* line 1 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/DroidSerif-Regular-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 7 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/DroidSerif-Italic-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* line 13 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/DroidSerif-Bold-webfont.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 19 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Serif';
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/DroidSerif-BoldItalic-webfont.ttf") format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* line 25 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Sans';
+  src: url("DroidSans-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 31 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'Droid Sans';
+  src: url("DroidSans-Bold-webfont.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 37 : /Users/constantx/Dropbox/projects/readerrr/stylus/_fonts.styl */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("chrome-extension://__MSG_@@extension_id__/fonts/fontawesome-webfont.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

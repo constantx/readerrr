@@ -1,2 +1,2 @@
-$(document).ready ->
-    $('#logo-link').html 'readerrr'
+$(document).ready ->  
+  $('#logo-link').html 'readerrr'
