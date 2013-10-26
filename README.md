@@ -1,6 +1,8 @@
 # readerrr - a relatively better google reader reading experience
 This is a google chrome extension I made 'cause I got tired of Google Reader default skin.
 
+![readerrr](http://i.imgur.com/fWRw6v4.png)
+
 ### Release&hellip;
 &hellip; can be found [on the chrome webstore](https://chrome.google.com/webstore/detail/readerrr/dljhagpflpblckhpalcondhfnekglcgl)
 
